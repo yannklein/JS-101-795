@@ -1,11 +1,11 @@
 const age = 18;
 
-if (age === 18) {
-  console.log('You can girigiri vote!');
-}
-else if (age > 18) {
-  console.log("You're old already!");
+if ( age === 18 ) {
+  console.log("You can giri giri vote");
+} 
+else if ( age < 18 ) {
+  console.log("You cannot vote");
 }
 else {
-  console.log("You cannot vote yet!");
+  console.log("You can vote!");
 }

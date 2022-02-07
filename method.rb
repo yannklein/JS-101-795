@@ -1,5 +1,5 @@
-def square(number)
-  number * number # return is optional
+def square(num)
+  num * num
 end
 
-p square(5)
+p square(4)

@@ -1,30 +1,37 @@
-console.log("Hello everyone!");
+console.log("Hello");
+console.log(typeof("hello"));
 
-console.log(typeof('string'))
-console.log(typeof(12))
-console.log(typeof(42.4))
-console.log(typeof(['Steven', 'Tom', 'Erika']))
-console.log(typeof({ awer: 1, bwr: 2, cwer: 3 }))
-console.log(typeof(true))
+console.log((42).toString());
+console.log(parseInt("42", 10));
 
-const firstName = 'Steven';
-let age = 10;
+const student = "Brian";
+// student = "Arthur"; CANNOT RE-ASSIGN
+console.log(student);
 
+let age = 24;
 age += 1;
 console.log(age);
 
-// firstName = 'Tom'; //YOU CANNOT RE-ASSIGN CONST
-console.log(firstName);
+console.log(student.length);
+console.log(student[0]);
 
-const students = ['Steven', 'Tom', 'Erika'];
+console.log(student.slice(2,4)); // slice from index 2 to index 4 excluded
+console.log(student.substring(2,4)); // slice from index 2 to index 4 excluded
+console.log(student.substring(2)); // slice from index to onwards
 
-students.push("Cedrine");
-console.log(students);
+console.log(student.toLowerCase());
+console.log(student.toUpperCase());
 
-console.log(firstName.slice(1));
-console.log(firstName.substring(1, 3)); // from index 1 to 3 excluded
+const students = ["Takeshi", "David", "Kanae"]
+const joinedStudentsWithComma = students.join() // get a joined string with comma between each value
+const joinedStudents = students.join("")
+console.log(joinedStudentsWithComma);
+console.log(joinedStudents);
 
-const studentString = "Nico-Reona-Gary-Arisa";
-const newStudents = studentString.split('-');
+console.log(joinedStudentsWithComma.split(","))
+console.log(joinedStudentsWithComma.split(""))
 
-console.log(newStudents.join(' and '));
+// Concatenation
+console.log(student + " is amazing");
+// Interpolation
+console.log(`${student} is amazing`);

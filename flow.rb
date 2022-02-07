@@ -1,9 +1,9 @@
-age = 18
+age = 14
 
 if age == 18
-  puts "You can girigiri vote!"
-elsif age > 18
-  puts "You're old already!"
+  p "You can giri giri vote"
+elsif age < 18 
+  p "You cannot vote"
 else
-  puts "You cannot vote!"
+  p "You can vote!"
 end

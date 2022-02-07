@@ -1,8 +1,7 @@
 const capitalize = (word) => {
   const firstLetter = word[0].toUpperCase();
-  console.log(firstLetter);
-  const restOfTheWord = word.substring(1).toLowerCase();
-  return `${firstLetter}${restOfTheWord}`;
+  const remainder = word.slice(1).toLowerCase();
+  return `${firstLetter}${remainder}`
 };
 
-capitalize("wagon");
+console.log(capitalize("kAnaE"));

@@ -1,24 +1,20 @@
 // ARRAY CRUD
-const students = ['Steven', 'Tom', 'Erika'];
+const students = ['David', 'Risako', 'Andrei'];
 
 // Create
-students.push('Reona');
+students.push("Kim");
+students.push("Amane");
 console.log(students);
-
 // Read
-console.log(students[1]);
-
+console.log(students[3]);
 // Update
-students[1] = 'Super Tom'
+students[4] = "Happy belated birthday Amane!";
 console.log(students);
-
 // Delete
-students.splice(1, 1);
+students.splice(0,2);
 console.log(students);
 
-// Arrow function
-// () => {}
-
-students.forEach((student, index) => {
-  console.log(`${index + 1} - ${student} is awesome!`);
+// JS arrow function: () => {}
+students.forEach((student) => {
+  console.log(`${student} is great!`);
 });
